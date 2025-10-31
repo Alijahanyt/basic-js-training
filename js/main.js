@@ -18,7 +18,6 @@
             p.innerText="even number";
             p.style.color="blue";
         }
-        // show whether sum is prime or not
         if (isPrime(sum)){
             p2.innerText = sum + " is a prime number";
             p2.style.color = "green";
@@ -29,9 +28,9 @@
         
     }
 
-    // Apply presentational styles using element.style (runs once on load)
+    // Apply presentational styles using element.style
     function styleElements(){
-        // page layout
+            // page layout
         document.body.style.margin = '0';
         document.body.style.fontFamily = 'Segoe UI, Roboto, Arial, sans-serif';
         document.body.style.background = '#f4f6f8';
@@ -40,7 +39,7 @@
         document.body.style.alignItems = 'center';
         document.body.style.height = '100vh';
 
-        // app container
+    // app container
         app.style.background = '#ffffff';
         app.style.padding = '28px';
         app.style.borderRadius = '12px';
@@ -49,7 +48,7 @@
         app.style.minWidth = '300px';
         app.style.maxWidth = '420px';
 
-        // input
+    // input
         input1.style.padding = '10px 12px';
         input1.style.fontSize = '16px';
         input1.style.border = '1px solid #e2e8f0';
@@ -58,7 +57,7 @@
         input1.style.width = '170px';
         input1.style.boxSizing = 'border-box';
 
-        // button
+    // button
         addBtn.style.padding = '10px 14px';
         addBtn.style.fontSize = '16px';
         addBtn.style.borderRadius = '8px';
@@ -68,7 +67,7 @@
         addBtn.style.cursor = 'pointer';
         addBtn.style.boxShadow = '0 6px 14px rgba(37,99,235,0.18)';
 
-        // simple hover effect using events (can't set :hover via element.style)
+        // simple hover effect using events
         addBtn.addEventListener('mouseenter', () => {
             addBtn.style.transform = 'translateY(-1px)';
             addBtn.style.opacity = '0.95';
@@ -103,10 +102,8 @@
         });
     }
 
-    // run styling once the script has bound elements
     styleElements();
 
-    // Make Enter key on input submit the number (keyboard-friendly)
     input1.addEventListener('keydown', (e) => {
         if (e.key === 'Enter'){
             e.preventDefault();
