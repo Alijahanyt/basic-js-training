@@ -44,23 +44,20 @@
         document.body.style.padding = '24px';
         document.body.style.boxSizing = 'border-box';
 
-        // app container
-        app.style.background = '#ffffff';
-        app.style.padding = '28px';
-        app.style.borderRadius = '12px';
-        app.style.boxShadow = '0 8px 24px rgba(15, 23, 42, 0.08)';
-        app.style.textAlign = 'center';
-        app.style.minWidth = '300px';
-        app.style.maxWidth = '420px';
-        app.style.boxSizing = 'border-box';
+    // app container (visuals only; width handled by CSS)
+    app.style.background = '#ffffff';
+    app.style.padding = '28px';
+    app.style.borderRadius = '12px';
+    app.style.boxShadow = '0 8px 24px rgba(15, 23, 42, 0.08)';
+    app.style.textAlign = 'center';
+    app.style.boxSizing = 'border-box';
 
-        // input
-        input1.style.padding = '10px 12px';
-        input1.style.border = '1px solid #e2e8f0';
-        input1.style.borderRadius = '8px';
-        input1.style.marginRight = '10px';
-        input1.style.width = '170px';
-        input1.style.boxSizing = 'border-box';
+    // input (visuals only; width handled by CSS)
+    input1.style.padding = '10px 12px';
+    input1.style.border = '1px solid #e2e8f0';
+    input1.style.borderRadius = '8px';
+    input1.style.marginRight = '10px';
+    input1.style.boxSizing = 'border-box';
 
         // button
         addBtn.style.padding = '10px 14px';
