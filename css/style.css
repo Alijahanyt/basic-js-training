@@ -1,5 +1,5 @@
 /* Mobile-first responsive CSS for Simple Adder */
-:root{
+:root {
     --bg: #f4f6f8;
     --card-bg: #ffffff;
     --text: #0f172a;
@@ -7,10 +7,13 @@
     --accent: #2563eb;
 }
 
-html, body { height: 100%; }
+html,
+body {
+    height: 100%;
+}
 
 /* Title (mobile defaults) */
-#appTitle{
+#appTitle {
     margin: 12px 0 10px;
     font-weight: 700;
     color: #111827;
@@ -19,10 +22,11 @@ html, body { height: 100%; }
     line-height: 1.2;
     max-width: 820px;
     padding: 0 12px;
-    font-size: 20px; /* mobile size */
+    font-size: 20px;
+    /* mobile size */
 }
 
-#subtitle{
+#subtitle {
     margin: 4px 0 12px;
     color: #6b7280;
     text-align: center;
@@ -33,25 +37,28 @@ html, body { height: 100%; }
 
 /* Card (width only; visual styling handled in main.js)
    main.js now applies background, padding, border-radius, box-shadow, and text color */
-#app{
+#app {
     width: 100%;
     max-width: 420px;
 }
 
-#result{
+#result {
     margin: 12px 0 8px;
-    font-size: 32px; /* mobile size */
+    font-size: 32px;
+    /* mobile size */
 }
 
-#app p{
+#app p {
     font-size: 15px;
     min-height: 1.2em;
 }
 
-#app p + p{ margin-top: 4px; }
+#app p+p {
+    margin-top: 4px;
+}
 
 /* Controls (stacked on mobile) */
-.controls{
+.controls {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -59,27 +66,60 @@ html, body { height: 100%; }
     justify-content: center;
 }
 
-#num1{
+#num1 {
     width: 100%;
 }
 
 /* visual focus styles are handled in main.js inline */
 
 /* Tablet and up */
-@media (min-width: 421px){
-    #app{ padding: 24px; }
-    #appTitle{ font-size: 22px; margin-bottom: 18px; }
-    #subtitle{ font-size: 14px; margin-bottom: 18px; }
-    #result{ font-size: 36px; }
-    .controls{ flex-direction: row; align-items: center; }
-    #num1{ width: 200px; margin-right: 12px; }
+@media (min-width: 421px) {
+    #app {
+        padding: 24px;
+    }
+
+    #appTitle {
+        font-size: 22px;
+        margin-bottom: 18px;
+    }
+
+    #subtitle {
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+
+    #result {
+        font-size: 36px;
+    }
+
+    .controls {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #num1 {
+        width: 200px;
+        margin-right: 12px;
+    }
 }
 
 /* Desktop */
-@media (min-width: 721px){
-    #app{ min-width: 300px; max-width: 420px; padding: 28px; }
-    #appTitle{ font-size: 26px; margin-top: 28px; margin-bottom: 20px; }
-    #result{ font-size: 40px; }
+@media (min-width: 721px) {
+    #app {
+        min-width: 300px;
+        max-width: 420px;
+        padding: 28px;
+    }
+
+    #appTitle {
+        font-size: 26px;
+        margin-top: 28px;
+        margin-bottom: 20px;
+    }
+
+    #result {
+        font-size: 40px;
+    }
 }
 
 /* Set explicit min-width for larger screens to keep the card readable */
