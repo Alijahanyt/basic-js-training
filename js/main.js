@@ -1,6 +1,6 @@
  let sum = 0;
-    let h1 = document.getElementById("result");
-    h1.innerText = sum;
+    let h2 = document.getElementById("result");
+    h2.innerText = sum;
     let input1 = document.getElementById("num1");
     let p = document.getElementsByTagName("p")[0];
     let p2 = document.getElementsByTagName("p")[1];
@@ -9,7 +9,7 @@
     
     function add(){
         sum += Number(input1.value);
-        h1.innerText = sum;  
+        h2.innerText = sum;  
         input1.value = "";
         if (sum%2){
             p.innerText="odd number";
@@ -77,10 +77,10 @@
             addBtn.style.opacity = '1';
         });
 
-        // result H1 and paragraphs
-        h1.style.margin = '18px 0 8px';
-        h1.style.fontSize = '40px';
-        h1.style.color = '#0f172a';
+        // result h2 and paragraphs
+        h2.style.margin = '18px 0 8px';
+        h2.style.fontSize = '40px';
+        h2.style.color = '#0f172a';
 
         p.style.fontSize = '16px';
         p.style.margin = '6px 0';
