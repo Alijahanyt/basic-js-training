@@ -13,7 +13,7 @@ a basic javaScript function that add the numbers given by the user in an input a
 ## Demo
 
 https://alijahanyt.github.io/basic-js-training/
-https://alijahanyt.github.io/basic-js-training/
+https://www.instagram.com/reel/DQf6klODobd/?igsh=MWRxdWw0ZmhnaWFkbA==
 
 
 ## Features
