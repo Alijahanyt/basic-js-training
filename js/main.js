@@ -6,6 +6,7 @@
     let p2 = document.getElementsByTagName("p")[1];
     let addBtn = document.getElementById('addBtn');
     let app = document.getElementById('app');
+    let appTitle = document.getElementById('appTitle');
     
     function add(){
         sum += Number(input1.value);
@@ -34,7 +35,8 @@
         document.body.style.margin = '0';
         document.body.style.fontFamily = 'Segoe UI, Roboto, Arial, sans-serif';
         document.body.style.background = '#f4f6f8';
-        document.body.style.display = 'flex';
+    document.body.style.display = 'flex';
+    document.body.style.flexDirection = 'column';
         document.body.style.justifyContent = 'center';
         document.body.style.alignItems = 'center';
         document.body.style.height = '100vh';
@@ -90,6 +92,19 @@
         p2.style.margin = '4px 0 0';
         p2.style.minHeight = '1.2em';
         p2.style.color = '#6b7280';
+
+        // title styling (larger spacing, nicer font and color)
+            appTitle.style.marginBottom = '40px';
+            appTitle.style.fontSize = '26px';
+            appTitle.style.fontWeight = '700';
+            appTitle.style.fontFamily = '"Segoe UI", "Helvetica Neue", Arial, sans-serif';
+            appTitle.style.color = 'rgb(14 66 139)';
+            appTitle.style.textAlign = 'center';
+            appTitle.style.letterSpacing = '0.2px';
+            appTitle.style.lineHeight = '1.2';
+            appTitle.style.maxWidth = '820px';
+            appTitle.style.padding = '0 12px';
+        
 
         // focus styles for input (improve accessibility)
         input1.addEventListener('focus', () => {
