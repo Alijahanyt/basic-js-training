@@ -34,6 +34,15 @@ body{
     font-size: 20px; /* mobile size */
 }
 
+#subtitle{
+    margin: 4px 0 12px;
+    color: #6b7280;
+    text-align: center;
+    font-size: 13px;
+    max-width: 760px;
+    padding: 0 12px;
+}
+
 /* Card */
 #app{
     width: 100%;
@@ -96,6 +105,7 @@ body{
     body{ justify-content: center; padding: 24px; }
     #app{ padding: 24px; }
     #appTitle{ font-size: 22px; margin-bottom: 18px; }
+    #subtitle{ font-size: 14px; margin-bottom: 18px; }
     #result{ font-size: 36px; }
     .controls{ flex-direction: row; align-items: center; }
     #num1{ width: 200px; margin-right: 12px; }
