@@ -8,18 +8,6 @@
 }
 
 html, body { height: 100%; }
-body{
-    margin: 0;
-    font-family: "Segoe UI", Roboto, Arial, sans-serif;
-    background: var(--bg);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* let content flow from the top on mobile */
-    min-height: 100vh;
-    padding: 20px;
-    box-sizing: border-box;
-}
 
 /* Title (mobile defaults) */
 #appTitle{
@@ -43,31 +31,24 @@ body{
     padding: 0 12px;
 }
 
-/* Card */
+/* Card (width only; visual styling handled in main.js)
+   main.js now applies background, padding, border-radius, box-shadow, and text color */
 #app{
     width: 100%;
     max-width: 420px;
-    background: var(--card-bg);
-    padding: 18px;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(15,23,42,0.08);
-    text-align: center;
-    box-sizing: border-box;
 }
 
 #result{
     margin: 12px 0 8px;
-    color: var(--text);
     font-size: 32px; /* mobile size */
 }
 
 #app p{
-    margin: 6px 0;
     font-size: 15px;
     min-height: 1.2em;
 }
 
-#app p + p{ color: var(--muted); margin-top: 4px; }
+#app p + p{ margin-top: 4px; }
 
 /* Controls (stacked on mobile) */
 .controls{
@@ -79,37 +60,19 @@ body{
 }
 
 #num1{
-    padding: 10px 12px;
-    border: 1px solid #e2e8f0;
-    border-radius: 8px;
     width: 100%;
-    box-sizing: border-box;
 }
 
-#addBtn{
-    padding: 10px 14px;
-    border-radius: 8px;
-    border: none;
-    background: var(--accent);
-    color: #fff;
-    cursor: pointer;
-    box-shadow: 0 6px 14px rgba(37,99,235,0.18);
-}
-
-#addBtn:hover{ opacity: 0.95; transform: translateY(-1px); }
-
-#num1:focus{ outline: 3px solid rgba(37,99,235,0.12); border-color: #93c5fd; }
+/* visual focus styles are handled in main.js inline */
 
 /* Tablet and up */
 @media (min-width: 421px){
-    body{ justify-content: center; padding: 24px; }
     #app{ padding: 24px; }
     #appTitle{ font-size: 22px; margin-bottom: 18px; }
     #subtitle{ font-size: 14px; margin-bottom: 18px; }
     #result{ font-size: 36px; }
     .controls{ flex-direction: row; align-items: center; }
     #num1{ width: 200px; margin-right: 12px; }
-    #addBtn{ width: auto; }
 }
 
 /* Desktop */
