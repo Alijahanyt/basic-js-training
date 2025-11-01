@@ -35,7 +35,9 @@ function styleElements() {
     // page layout
     document.body.style.margin = '0';
     document.body.style.fontFamily = '"Segoe UI", Roboto, Arial, sans-serif';
-    document.body.style.background = '#f4f6f8';
+    // static dark-mode-like background (not dynamic)
+    document.body.style.background = '#0b1220';
+    document.body.style.color = '#e6eef8';
     document.body.style.display = 'flex';
     document.body.style.flexDirection = 'column';
     document.body.style.justifyContent = 'center';
@@ -45,28 +47,31 @@ function styleElements() {
     document.body.style.boxSizing = 'border-box';
 
     // app container (visuals only; width handled by CSS)
-    app.style.background = '#ffffff';
+    // card background and shadow tuned for dark look
+    app.style.background = '#0f1724';
     app.style.padding = '28px';
     app.style.borderRadius = '12px';
-    app.style.boxShadow = '0 8px 24px rgba(15, 23, 42, 0.08)';
+    app.style.boxShadow = '0 8px 24px rgba(2,6,23,0.6)';
     app.style.textAlign = 'center';
     app.style.boxSizing = 'border-box';
 
     // input (visuals only; width handled by CSS)
     input1.style.padding = '10px 12px';
-    input1.style.border = '1px solid #e2e8f0';
+    input1.style.border = '1px solid #263241';
     input1.style.borderRadius = '8px';
     input1.style.marginRight = '10px';
+    input1.style.background = 'transparent';
+    input1.style.color = '#e6eef8';
     input1.style.boxSizing = 'border-box';
 
     // button
     addBtn.style.padding = '10px 14px';
     addBtn.style.borderRadius = '8px';
     addBtn.style.border = 'none';
-    addBtn.style.background = '#2563eb';
-    addBtn.style.color = '#fff';
+    addBtn.style.background = '#60a5fa';
+    addBtn.style.color = '#04263b';
     addBtn.style.cursor = 'pointer';
-    addBtn.style.boxShadow = '0 6px 14px rgba(37,99,235,0.18)';
+    addBtn.style.boxShadow = '0 6px 18px rgba(6,78,159,0.28)';
 
     // simple hover effect for the button
     addBtn.addEventListener('mouseenter', () => {
@@ -80,18 +85,18 @@ function styleElements() {
 
     // result margins and colors (no font sizes)
     h2.style.margin = '18px 0 8px';
-    h2.style.color = '#0f172a';
+    h2.style.color = '#e6eef8';
 
     p.style.margin = '6px 0';
     p2.style.margin = '4px 0 0';
-    p2.style.color = '#6b7280';
+    p2.style.color = '#9aa4b2';
 
     // title styling (no font-size changed here to avoid conflict with CSS)
     appTitle.style.marginTop = '28px';
     appTitle.style.marginBottom = '20px';
     appTitle.style.fontWeight = '700';
     appTitle.style.fontFamily = '"Segoe UI", "Helvetica Neue", Arial, sans-serif';
-    appTitle.style.color = 'rgb(14 66 139)';
+    appTitle.style.color = '#e6eef8';
     appTitle.style.textAlign = 'center';
     appTitle.style.letterSpacing = '0.2px';
     appTitle.style.lineHeight = '1.2';
@@ -101,8 +106,8 @@ function styleElements() {
 
     // focus styles for input (improve accessibility)
     input1.addEventListener('focus', () => {
-        input1.style.outline = '3px solid rgba(37,99,235,0.12)';
-        input1.style.borderColor = '#93c5fd';
+        input1.style.outline = '3px solid rgba(96,165,250,0.12)';
+        input1.style.borderColor = '#60a5fa';
     });
     input1.addEventListener('blur', () => {
         input1.style.outline = 'none';
