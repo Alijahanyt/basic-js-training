@@ -83,6 +83,4 @@ html, body { height: 100%; }
 }
 
 /* Set explicit min-width for larger screens to keep the card readable */
-@media (min-width:721px){
-    #app{ min-width:300px; max-width:420px; }
-}
+/* (Duplicate block removed - desktop sizing already handled above) */
