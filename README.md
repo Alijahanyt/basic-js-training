@@ -27,9 +27,9 @@ https://alijahanyt.github.io/basic-js-training/
 
 ![App Screenshots](https://github.com/Alijahanyt/basic-js-training/blob/main/screenshots/htmlcode.png)
 
-(https://github.com/Alijahanyt/basic-js-training/blob/main/screenshots/jscode1.png)
+![App Screenshots](https://github.com/Alijahanyt/basic-js-training/blob/main/screenshots/jscode1.png)
 
-(https://github.com/Alijahanyt/basic-js-training/blob/main/screenshots/jscode2.png)
+![App Screenshots](https://github.com/Alijahanyt/basic-js-training/blob/main/screenshots/jscode2.png)
 
-(https://github.com/Alijahanyt/basic-js-training/blob/main/screenshots/project-screenshot.png)
+![App Screenshots](https://github.com/Alijahanyt/basic-js-training/blob/main/screenshots/project-screenshot.png)
 
