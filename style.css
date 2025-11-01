@@ -1,0 +1,115 @@
+/* Responsive styles for the Simple Adder app */
+:root{
+    --bg: #f4f6f8;
+    --card-bg: #ffffff;
+    --text: #0f172a;
+    --muted: #6b7280;
+    --accent: #2563eb;
+}
+
+html,body{
+    height:100%;
+}
+body{
+    margin:0;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background:var(--bg);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+    padding:24px;
+    box-sizing:border-box;
+}
+
+#appTitle{
+    margin-top:8px;
+    margin-bottom:18px;
+    font-size:26px;
+    font-weight:700;
+    color:#111827; /* slightly softer black */
+    text-align:center;
+    letter-spacing:0.2px;
+    line-height:1.2;
+    max-width:820px;
+    padding:0 12px;
+}
+
+#app{
+    background:var(--card-bg);
+    padding:28px;
+    border-radius:12px;
+    box-shadow:0 8px 24px rgba(15,23,42,0.08);
+    text-align:center;
+    width:100%;
+    max-width:420px;
+    box-sizing:border-box;
+}
+
+#result{
+    margin:18px 0 8px;
+    font-size:40px;
+    color:var(--text);
+}
+
+#app p{ 
+    margin:6px 0;
+    font-size:16px;
+    min-height:1.2em;
+}
+
+#app p + p{
+    margin-top:4px;
+    color:var(--muted);
+}
+
+#num1{
+    padding:10px 12px;
+    font-size:16px;
+    border:1px solid #e2e8f0;
+    border-radius:8px;
+    width:170px;
+    box-sizing:border-box;
+}
+
+#addBtn{
+    padding:10px 14px;
+    font-size:16px;
+    border-radius:8px;
+    border:none;
+    background:var(--accent);
+    color:#fff;
+    cursor:pointer;
+    box-shadow:0 6px 14px rgba(37,99,235,0.18);
+}
+
+#addBtn:hover{
+    transform:translateY(-1px);
+    opacity:0.95;
+}
+
+#num1:focus{
+    outline:3px solid rgba(37,99,235,0.12);
+    border-color:#93c5fd;
+}
+
+/* Responsive adjustments */
+@media (max-width:420px){
+    #app{
+        padding:20px;
+    }
+    /* stack input and button on small screens */
+    #num1, #addBtn{
+        width:100%;
+        display:block;
+    }
+    #num1{ margin-bottom:10px; }
+    #result{ font-size:34px; }
+    #appTitle{ font-size:22px; margin-bottom:16px; }
+}
+
+@media (min-width:421px) and (max-width:720px){
+    #num1{ width:200px; }
+    #result{ font-size:36px; }
+}

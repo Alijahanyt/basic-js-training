@@ -29,19 +29,22 @@
         
     }
 
-    // Apply presentational styles using element.style
     function styleElements(){
-            // page layout
+        // Reapply inline styles (except font sizes) so CSS can handle responsive font sizing
+
+        // page layout
         document.body.style.margin = '0';
-        document.body.style.fontFamily = 'Segoe UI, Roboto, Arial, sans-serif';
+        document.body.style.fontFamily = '"Segoe UI", Roboto, Arial, sans-serif';
         document.body.style.background = '#f4f6f8';
-    document.body.style.display = 'flex';
-    document.body.style.flexDirection = 'column';
+        document.body.style.display = 'flex';
+        document.body.style.flexDirection = 'column';
         document.body.style.justifyContent = 'center';
         document.body.style.alignItems = 'center';
         document.body.style.height = '100vh';
+        document.body.style.padding = '24px';
+        document.body.style.boxSizing = 'border-box';
 
-    // app container
+        // app container
         app.style.background = '#ffffff';
         app.style.padding = '28px';
         app.style.borderRadius = '12px';
@@ -49,19 +52,18 @@
         app.style.textAlign = 'center';
         app.style.minWidth = '300px';
         app.style.maxWidth = '420px';
+        app.style.boxSizing = 'border-box';
 
-    // input
+        // input
         input1.style.padding = '10px 12px';
-        input1.style.fontSize = '16px';
         input1.style.border = '1px solid #e2e8f0';
         input1.style.borderRadius = '8px';
         input1.style.marginRight = '10px';
         input1.style.width = '170px';
         input1.style.boxSizing = 'border-box';
 
-    // button
+        // button
         addBtn.style.padding = '10px 14px';
-        addBtn.style.fontSize = '16px';
         addBtn.style.borderRadius = '8px';
         addBtn.style.border = 'none';
         addBtn.style.background = '#2563eb';
@@ -69,7 +71,7 @@
         addBtn.style.cursor = 'pointer';
         addBtn.style.boxShadow = '0 6px 14px rgba(37,99,235,0.18)';
 
-        // simple hover effect using events
+        // simple hover effect for the button
         addBtn.addEventListener('mouseenter', () => {
             addBtn.style.transform = 'translateY(-1px)';
             addBtn.style.opacity = '0.95';
@@ -79,23 +81,17 @@
             addBtn.style.opacity = '1';
         });
 
-        // result h2 and paragraphs
+        // result margins and colors (no font sizes)
         h2.style.margin = '18px 0 8px';
-        h2.style.fontSize = '40px';
         h2.style.color = '#0f172a';
 
-        p.style.fontSize = '16px';
         p.style.margin = '6px 0';
-        p.style.minHeight = '1.2em';
-
-        p2.style.fontSize = '15px';
         p2.style.margin = '4px 0 0';
-        p2.style.minHeight = '1.2em';
         p2.style.color = '#6b7280';
 
-        // title styling (larger spacing, nicer font and color)
-            appTitle.style.marginBottom = '40px';
-            appTitle.style.fontSize = '26px';
+        // title styling (no font-size changed here to avoid conflict with CSS)
+            appTitle.style.marginTop = '28px';
+            appTitle.style.marginBottom = '20px';
             appTitle.style.fontWeight = '700';
             appTitle.style.fontFamily = '"Segoe UI", "Helvetica Neue", Arial, sans-serif';
             appTitle.style.color = 'rgb(14 66 139)';
