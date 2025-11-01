@@ -25,11 +25,13 @@ https://www.instagram.com/reel/DQf6klODobd/?igsh=MWRxdWw0ZmhnaWFkbA==
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/alijahan.io) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ali-jahanyt/) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:alijahanyt@gmail.com) 
 ## Screenshots
 
+![App Screenshots](https://github.com/Alijahanyt/basic-js-training/blob/main/screenshots/project-screenshot.png)
+
 ![App Screenshots](https://github.com/Alijahanyt/basic-js-training/blob/main/screenshots/htmlcode.png)
 
 ![App Screenshots](https://github.com/Alijahanyt/basic-js-training/blob/main/screenshots/jscode1.png)
 
 ![App Screenshots](https://github.com/Alijahanyt/basic-js-training/blob/main/screenshots/jscode2.png)
 
-![App Screenshots](https://github.com/Alijahanyt/basic-js-training/blob/main/screenshots/project-screenshot.png)
+
 
